@@ -5,9 +5,10 @@ from pathlib import Path
 
 
 TEST_MESSAGE = "Test_bot_message. If u read this, all fine."
+DEF_CONFIG_PATH = Path(r"C:\Users\dev_1\Desktop\utils\tg_messenger\config.json")
 
 
-def read_config(path: str | Path = "config.json") -> Tuple[str, str]:
+def read_config(path: str | Path = DEF_CONFIG_PATH) -> Tuple[str, str]:
     """Используется для чтения конфигурационного файла"""
 
     with open(path, 'r') as json_file:
